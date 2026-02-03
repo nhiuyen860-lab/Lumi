@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply — Lumina Match</title>
+    <meta
+      name="description"
+      content="Apply for the Lumina Passport. A guided application that matches you with the right people and events."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">Lumina Match</a>
+        <nav class="nav-links">
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a class="nav-cta" href="apply.html">Start Your Passport</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="logo">Let’s build your Passport</h1>
+        <p class="lead">
+          This helps us match you with the right people and the right events. Takes about 5 minutes.
+        </p>
+
+        <form class="form-wrapper" data-passport-form data-endpoint="">
+          <div class="progress">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="alert"></div>
+
+          <section class="step active">
+            <h2>Step 1: Basics</h2>
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input id="first-name" name="firstName" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input id="age" name="age" type="number" min="18" required />
+            </div>
+            <div class="form-group">
+              <label>I’m interested in meeting…</label>
+              <div class="radio-group">
+                <label><input type="radio" name="interestedIn" value="Men" required /> Men</label>
+                <label><input type="radio" name="interestedIn" value="Women" required /> Women</label>
+                <label><input type="radio" name="interestedIn" value="Everyone" required /> Everyone</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>I’m looking for…</label>
+              <div class="radio-group">
+                <label><input type="radio" name="lookingFor" value="Something serious" required /> Something serious</label>
+                <label><input type="radio" name="lookingFor" value="Still exploring" required /> Still exploring</label>
+                <label><input type="radio" name="lookingFor" value="Open to both" required /> Open to both</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="step">
+            <h2>Step 2: The Fun One</h2>
+            <div class="form-group">
+              <label for="sunday">What does your perfect Sunday morning look like? Paint me a picture.</label>
+              <textarea id="sunday" name="sunday" rows="5" required></textarea>
+              <p class="helper-text">This helps us understand your lifestyle and energy.</p>
+            </div>
+          </section>
+
+          <section class="step">
+            <h2>Step 3: Lifestyle</h2>
+            <div class="form-group">
+              <label>Are you more of a…</label>
+              <div class="radio-group">
+                <label><input type="radio" name="chronotype" value="Sunrise person" required /> Sunrise person</label>
+                <label><input type="radio" name="chronotype" value="Night owl" required /> Night owl</label>
+                <label><input type="radio" name="chronotype" value="Somewhere in between" required /> Somewhere in between</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How often do you move your body?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="movement" value="Daily" required /> Daily</label>
+                <label><input type="radio" name="movement" value="Few times a week" required /> Few times a week</label>
+                <label><input type="radio" name="movement" value="Occasionally" required /> Occasionally</label>
+                <label><input type="radio" name="movement" value="Rarely" required /> Rarely</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Your relationship with alcohol?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="alcohol" value="Don't drink" required /> Don’t drink</label>
+                <label><input type="radio" name="alcohol" value="Drink rarely" required /> Drink rarely</label>
+                <label><input type="radio" name="alcohol" value="Socially" required /> Socially</label>
+                <label><input type="radio" name="alcohol" value="Regularly" required /> Regularly</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="dealbreakers">Any dealbreakers?</label>
+              <input id="dealbreakers" name="dealbreakers" type="text" placeholder="e.g., smoking, heavy drinking, or type ‘none’" required />
+            </div>
+          </section>
+
+          <section class="step">
+            <h2>Step 4: Values &amp; Style</h2>
+            <div class="form-group">
+              <label for="values">What are 3-5 values that matter most to you in a partner?</label>
+              <textarea id="values" name="values" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Are you more…</label>
+              <div class="radio-group">
+                <label><input type="radio" name="energy" value="Introverted" required /> Introverted</label>
+                <label><input type="radio" name="energy" value="Extroverted" required /> Extroverted</label>
+                <label><input type="radio" name="energy" value="Ambivert" required /> Ambivert</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>For a first date, what sounds best?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="firstDate" value="Morning walk + coffee" required /> Morning walk + coffee</label>
+                <label><input type="radio" name="firstDate" value="Brunch" required /> Brunch</label>
+                <label><input type="radio" name="firstDate" value="Dinner" required /> Dinner</label>
+                <label><input type="radio" name="firstDate" value="Something active" required /> Something active</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="step">
+            <h2>Step 5: Agreement</h2>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="agreement" required /> I agree to the Lumina Code of Conduct
+              </label>
+            </div>
+            <details class="card">
+              <summary>Read the Code of Conduct</summary>
+              <ul class="feature-list">
+                <li>Be respectful. Consent is mandatory.</li>
+                <li>No harassment, discrimination, or unwanted contact.</li>
+                <li>No pressuring for phone/IG at the venue. Use the mutual match process.</li>
+                <li>If someone asks you to stop, stop immediately.</li>
+                <li>Hosts may remove anyone who violates these rules.</li>
+              </ul>
+            </details>
+          </section>
+
+          <div class="form-nav">
+            <button type="button" class="back-btn">Back</button>
+            <button type="button" class="next-btn">Continue</button>
+          </div>
+        </form>
+
+        <div class="form-wrapper" data-confirmation style="display: none;">
+          <h2>You’re in!</h2>
+          <p class="lead">Your Passport is ready. We’ll review your application and send you an invite to an event that fits your style.</p>
+          <p>What to expect: You’ll hear from Lumi within 48 hours.</p>
+          <a class="primary-btn" href="https://instagram.com/luminamatch" target="_blank" rel="noreferrer">
+            Follow us on Instagram
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Lumina Match</div>
+          <small>Adults only (18+) · Bangkok, Thailand · Questions? hello@luminamatch.com</small>
+        </div>
+        <div>
+          <strong>Explore</strong>
+          <div class="feature-list">
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <strong>Connect</strong>
+          <div class="feature-list">
+            <a href="https://instagram.com/luminamatch" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="apply.html">Apply</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

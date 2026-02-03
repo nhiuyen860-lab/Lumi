@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events — Lumina Match</title>
+    <meta name="description" content="Upcoming Lumina Match events in Bangkok." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">Lumina Match</a>
+        <nav class="nav-links">
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a class="nav-cta" href="apply.html">Start Your Passport</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="logo">Upcoming Events</h1>
+        <p class="lead">Choose your format and apply for a curated invite.</p>
+
+        <div class="filter-row">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="brunch">Brunch</button>
+          <button data-filter="dinner">Dinner</button>
+          <button data-filter="speed">Speed Dating</button>
+        </div>
+
+        <div class="events-grid">
+          <article class="card event-card" data-event="brunch">
+            <h3>Morning Brunch Match</h3>
+            <p class="event-meta">Saturday, Feb 15 · 10:00 AM · Thonglor</p>
+            <p>
+              A relaxed morning setting for health-minded singles. Guided conversations, curated seating, and no
+              alcohol pressure.
+            </p>
+            <p class="event-meta">฿950 · Brunch format</p>
+            <a class="apply-link" href="apply.html">Apply</a>
+          </article>
+          <article class="card event-card" data-event="dinner">
+            <h3>Micro Dinner</h3>
+            <p class="event-meta">Friday, Feb 21 · 7:00 PM · Sathorn</p>
+            <p>
+              An intimate 12-person dinner with curated seating based on your Passport. Three rounds of guided
+              conversation. Premium venue, premium people.
+            </p>
+            <p class="event-meta">฿1,500 · Dinner format</p>
+            <a class="apply-link" href="apply.html">Apply</a>
+          </article>
+          <article class="card event-card" data-event="speed">
+            <h3>Sober Speed Dating</h3>
+            <p class="event-meta">Saturday, Mar 1 · 11:00 AM · Silom</p>
+            <p>Structured introductions for people who want efficiency without the party atmosphere.</p>
+            <p class="event-meta">฿800 · Speed dating</p>
+            <a class="apply-link" href="apply.html">Apply</a>
+          </article>
+        </div>
+
+        <section class="section">
+          <h2>Past Events</h2>
+          <div class="events-grid">
+            <article class="card event-card" data-event="brunch">
+              <h3>Sunrise Coffee Connections</h3>
+              <p class="event-meta">Sold Out · January 2024 · Ari</p>
+              <p>Small group coffee meet-up with guided prompts and a quiet morning venue.</p>
+              <button class="sold-out" type="button">Sold Out</button>
+            </article>
+            <article class="card event-card" data-event="dinner">
+              <h3>Chef’s Table Match</h3>
+              <p class="event-meta">Sold Out · December 2023 · Sathorn</p>
+              <p>Premium dinner setting with curated seating and a host-led conversation flow.</p>
+              <button class="sold-out" type="button">Sold Out</button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Lumina Match</div>
+          <small>Adults only (18+) · Bangkok, Thailand · Questions? hello@luminamatch.com</small>
+        </div>
+        <div>
+          <strong>Explore</strong>
+          <div class="feature-list">
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <strong>Connect</strong>
+          <div class="feature-list">
+            <a href="https://instagram.com/luminamatch" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="apply.html">Apply</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
