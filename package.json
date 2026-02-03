@@ -1,0 +1,10 @@
+{
+  "name": "lumina-match",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static multi-page marketing site for Lumina Match.",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  }
+}
